@@ -1,0 +1,152 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "workstation workout",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": [
+                        "yes",
+                        "yes please",
+                        "please yes"
+                    ]
+                },
+                {
+                    "name": "getStart",
+                    "slots": [],
+                    "samples": [
+                        "start",
+                        "lets start",
+                        "yes start"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": [
+                        "no",
+                        "no please",
+                        "please no"
+                    ]
+                },
+				{
+				     "name": "bodyPartIntent",
+					 "samples" :[
+					  "{category}",
+					  "tell me about {category}",
+					  "tell me about {category} stretch"
+					 ],
+					 "slots": [
+                        {
+                            "name": "category",
+                            "type": "WW_BODY_PART"
+                        }
+                    ] 
+				},
+                {
+                    "name": "getLaunchIntent",
+                    "slots": [],
+                    "samples": [
+                        "workstation workout",
+                        "start workstation workout",
+                        "open workstation workout",
+                        "launch workstation workout",
+                        "run workstation workout",
+                        "begin workstation workout"
+                    ]
+                },
+                {
+                    "name": "getChairIntent",
+                    "slots": [],
+                    "samples": [
+                        "settled",
+                        "I am settled",
+                        "yes settled already",
+                        "settled lets start"
+                    ]
+                },
+                {
+                    "name": "getBodyIntent",
+                    "slots": [
+                        {
+                            "name": "category",
+                            "type": "WW_BODY_PART"
+                        }
+                    ],
+                    "samples": [
+                        "{category}",
+                        "{category} Please"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "WW_BODY_PART",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "eyes"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "neck"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "shoulders"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "wrist"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "fingers"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "back"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "hands"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "legs"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "lower back"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "shoulder blade"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
